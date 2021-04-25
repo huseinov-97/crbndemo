@@ -1,0 +1,11 @@
+
+
+spring:
+  profiles:
+    active: local-dev # Local-dev is the default profile that we override in the given environment from the environment variable
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
